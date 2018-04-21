@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         Picasso.with(this)
                 .load(url)
-                .fit()
+                .placeholder(R.drawable.loading)
+                .error(R.drawable.error)
                 .into(imageView);
     }
 }
